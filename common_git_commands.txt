@@ -1,3 +1,4 @@
-git fetch
 git commit -m "commit"
 git push -u origin master
+git fetch
+git merge origin/master
