@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
 Eric: My favourite animal is the wolf.
-
 Gurpyar: My favorite animal is Lion.
->>>>>>> origin/master
+JJ: My favorite animal is the pangolin!
