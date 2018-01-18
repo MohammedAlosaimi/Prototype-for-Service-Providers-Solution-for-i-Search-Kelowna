@@ -1,3 +1,4 @@
+git clone linkhere.com
 git commit -m "commit"
 git push -u origin master
 git fetch
