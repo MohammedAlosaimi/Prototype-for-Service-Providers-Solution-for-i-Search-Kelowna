@@ -11,4 +11,10 @@ confilct resolution:
    2)commit
    3)fetch
    4)merge
-   5)push
+   5)push origin
+
+
+to update the repository in your machine:
+
+1) git fetch
+2) git merge origin/master
