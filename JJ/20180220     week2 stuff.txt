@@ -1,0 +1,65 @@
+13:19 PM Tuesday, February 20, 2018-02-20
+Okay so me and Mo have to come up with some good queries.
+
+Queries
+
+Columns
+	quantitative
+		- id (primary key)
+		- title
+			name of organization
+		- coordinates
+			for possible mappping
+		- description
+		- item veiws
+			I_think of how many times that organization was viewed on the site
+		- building type
+			an array with possible multivalues
+		- contact person
+		- position of contact person
+		- phone number of them
+		- email of them
+		- services provided
+			array
+		- other servies
+			array
+		- Level of Drugs and Alcohol Tolerence
+	qualitative (boolean)
+		has good variety
+			- has waitlist
+			- has max duration of stay
+			- housing is fully self contained
+			- housing is fully furnished
+			- is the building under RTA
+			- Building Accommodated Individuals with Disabilities
+			- Some Units Accommodate Individuals with Disabilities
+			- The Units are RGI
+			- unit is lower end of market
+			- Building Qualifies For Rental Assistance
+			- Residents are required to abstain from alcohol and drugs
+			- Clean Time Requirement
+			- Treatment/Detox Required First
+			- Referrals Form
+			- Demographic Served
+			- Gender Served
+			- Primary Target Resident
+			- Search Keywords
+		has bad variety
+			- Can the key tenant or primary lease holder be a youth
+			- Potential residents are required to live in Kelowna for a certain amount of time
+			- has min income level
+			- has max income level
+			- Residents are Require to be on Income or Disability Assistance
+			- Building is Pet Friendly
+			- Smoking is Permitted in Building
+			- Smoking is Permitted in Units
+			- Residents Require Professional Support for Eligibility
+
+
+
+
+			
+			
+To consider
+	- there could be a patter in the skimpy columns that is that the data that is in the columns is consistent for a few organiztions. if this is true we could have better queries just for those organizations.
+	- Mock data.
