@@ -1,6 +1,6 @@
-use isearch;
+﻿use isearch;
 DROP TABLE IF EXISTS isearch;
-CREATE TABLE istable(
+CREATE TABLE isearch(
    id                                                                               INTEGER  NOT NULL
   ,type                                                                             VARCHAR(6) NOT NULL
   ,item_id                                                                          INTEGER  NOT NULL
