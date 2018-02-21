@@ -4,7 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/wamp64/www/Project_Repo/COSC224_Project/i-Search_Kelowna/index.html</file>
+<<<<<<< HEAD
             <file>file:/C:/wamp64/www/Project_Repo/COSC224_Project/i-Search_Kelowna/output.php</file>
+=======
+            <file>file:/C:/wamp64/www/Project_Repo/COSC224_Project/i-Search_Kelowna/styleOne.css</file>
+>>>>>>> 9136ff34be535af03f365cce929e5b0b6eb023d4
         </group>
     </open-files>
 </project-private>
