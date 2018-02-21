@@ -9,41 +9,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styleOne.css">       
     </head>
+
+
+
     <body>
-        <h1>           
-            <a href="https://isearchkelowna.ca/"><img src = "iSearchKelowna Logo.PNG"></a>
-        </h1>
+        <header>
+            <h1><a href="https://isearchkelowna.ca/"><img src = "iSearchKelowna Logo.PNG" alt = "logo"></a></h1>
+        </header>
+
         <aside>
             <h4>Common Search Subjects</h4>
-            <input type ="submit" value = "Option 1"><br>
-            <input type ="submit" value = "Option 2"><br>
-            <input type ="submit" value = "Option 3"><br>
-            <input type ="submit" value = "Option 4"><br>
-            <input type ="submit" value = "Option 5">          
+            <form method = "post" action = "output.php">          
+                <input type ="submit" name = "op1" value = "Option 1"><br>
+                <input type ="submit" name = "op2" value = "Option 2"><br>
+                <input type ="submit" name = "op3" value = "Option 3"><br>
+                <input type ="submit" name = "op4" value = "Option 4"><br>
+                <input type ="submit" name = "op5" value = "Option 5">    
+            </form>
         </aside>
-        <div id = "formDiv">           
+
+
+        <div id = "formDiv">  
             <h4>Custom Organization Search</h4>
             <form>
-                Keywords: <input type = "text"><br>
-                Age Demographic:
-                <input type = "number" id = "minAge" class = "num" placeholder="Min"> to 
-                <input type = "number" id = "maxAge" class = "num" placeholder="Max"><br>
-                Desired Monthly Rent:
+                <label for="Keywords">Keywords:</label>
+                <input type = "text" id = "Keywords">
+                <label for="minAge"> Age Demographic:</label>
+                    <input type = "number" id = "minAge" class = "num" placeholder="Min"> to 
+                    <input type = "number" id = "maxAge" class = "num" placeholder="Max">
+                <label for="rent">Desired Monthly Rent:</label>
                 <input type = "number" id = "rent" placeholder = "$" class = "num"><br>
-                Gender(s) Served: <select id = "genderServed">
+                <label for="genderServged">Gender(s) Served:</label>
+                <select id = "genderServged">
                     <option>No preference</option>
                     <option>Male only</option>
                     <option>Female only</option>
                     <option>Transgender only</option>
                     <option>All genders accommodated</option>                    
                 </select>
-                Building Type: <select id = "buildingType">
+                <label for="buildingType">Building Type:</label>
+                <select id = "buildingType">
                     <option>No preference</option>
                     <option>Emergency </option>
                     <option>Supportive</option>
                     <option>Transitional</option>
                     <option>Low income rental</option>
                 </select><br>
+
                 <div id ="showMore">
                     Is alcohol permitted?                
                     <input type = "radio" name = "alcUse" value = "Yes" id = "atrue">Yes
@@ -69,25 +81,27 @@
             </form> 
             <button id = "showBtn" onclick="showMore()">Show more</button>
         </div>
+
+
         <main>
             output
             <br><br><br><br><br>          
         </main>
-        <footer>
-            © iSearch - Kelowna
-        </footer>
+
+        © iSearch - Kelowna
+
         <script>
-        function showMore() {
-            var x = document.getElementById("showMore");
-            var btn = document.getElementById("showBtn")
-            if (x.style.display === "none"){
-                x.style.display = "block";
-            } 
-            else {
-                x.style.display = "none";
+            function showMore() {
+                var x = document.getElementById("showMore");
+                var btn = document.getElementById("showBtn")
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
             }
-        }
-    </script>
+        </script>
+
     </body>    
 </html>
 
