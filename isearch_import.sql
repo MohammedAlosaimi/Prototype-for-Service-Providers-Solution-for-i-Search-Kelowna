@@ -1,4 +1,4 @@
-use isearch;
+﻿use isearch;
 DROP TABLE IF EXISTS isearch;
 CREATE TABLE isearch(
    id                                                                               INTEGER  NOT NULL
