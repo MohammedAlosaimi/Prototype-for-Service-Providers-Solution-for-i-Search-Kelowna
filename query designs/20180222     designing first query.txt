@@ -1,0 +1,40 @@
+13:31 PM Thursday, February 22, 2018-02-22
+The first query we want to implement will be to find organizations based on all the boolean fields in the table.
+The idea is that a user will click on the first predefined query option on the left side of the website. This will change the display region have a form where every boolean field will be listed along with a checkbox. The user will click all check boxes that apply to themselves, then press submit. The form will change to a report of all organizations that match the booleans select in the form. 
+
+That is the basic idea. I think that if their are multiple organizations returned, they could be sorted by size, meaning the total amount of rooms or beds of that organization.
+The size 
+
+In the following query there is a php generated where clause. Each generated item in this clause will look something like this:
+	column_name_1 = 'TRUE' AND column_name_2 = 'TRUE' AND ... etc
+Every column that the user checks will be added to that clause in this way.
+
+Here is a template for what the sql will look like:
+
+	SELECT title, contact_person, phone_number, email
+	FROM isearch.istable
+	WHERE ( ... php generated where list based on the input form)
+	ORDER BY
+		(Number_of_Dormitory_Beds +
+		Number_of_Shared_Bedroom_Beds +
+		Number_of_Single_Bedroom_Beds +
+		Number_of_Studio/Bachelor_Units +
+		Number_of_1_Bedroom_Units +
+		Number_of_2_Bedroom_Units +
+		Number_of_3_Bedroom_Units +
+		Number_of_4_Bedroom_Units +
+		Number_of_Other_Type_Bedroom_Units +
+		Number_Beds_in_house_with_shared_bedroom(s) +
+		Number_of_Beds_in_House_with_Individual_Rooms +
+		Number_of_Apartment_Studio_Units +
+		Number_of_1_Bedroom_Apartment_Units +
+		Number_of_2_and_3_Bedroom_Apartment_Units +
+		Number_of_Other_Units +
+		Number_of_Beds_in_Shared_Accommodation_House +
+		Number_of_Units_in_Secondary_House_Suite +
+		Number_of_Duplex_Units +
+		Number_of_Fourplex_Units +
+		Number_of_Townhouse_Units);
+		
+That enormous ORDER BY clause is an attempt to sort organizations based on the idea of how 'big' they are. The bigger they the more options and influence they have. The biggest organization will probably have the best chance of letting you in. That is the idea anyway. Feel free to remove anything from the ORDER BY clause to make it easier test the query in the wepbage. 
+Also it should be noted that the actual column names listen that ORDER BY clause might not be exactly correct. Sorry for any inconvenience. 
