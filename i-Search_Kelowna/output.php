@@ -2,7 +2,6 @@
 <?php
 if (isset($_POST['op1'])){
    $in = "";
-   $size = 0;
    $mysqli = mysqli_connect("localhost", "root", "", "i-searchkelownadb");
    $sql = "SELECT DISTINCT(COL10)
            FROM tableone";
@@ -12,19 +11,19 @@ if (isset($_POST['op1'])){
    $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));
    $rArray = array();
    $rArray2 = array();
+   $finalArray = array(array());
     while ($info = mysqli_fetch_array($result)){       
        $in = stripslashes($info["COL10"]);
        array_push($rArray, $in);
     }
     while ($info = mysqli_fetch_array($result2)){       
-       $in = stripslashes($info["COL12"]);
-       array_push($rArray2, $in);
+       $in = stripslashes($info["COL12"]);      
+        array_push($rArray2, $in);
     }
     $size = sizeof($rArray);
-    for ($i = 1; $i < $size; $i++) {
-    echo $rArray[$i], "<br>";
-    $temp = $rArray2[$i];
-    echo "Description:", $temp, "<br>";
+    for ($i = 1; $i < $size; $i++){
+        echo $rArray[$i], "<br>";
+        echo "Description: ", $rArray2[$i], "<br>";
     }
 }
 
@@ -38,5 +37,9 @@ if (isset($_POST['op4'])){
     
 }
 if (isset($_POST['op5'])){
+    
+}
+
+if (isset($_POST['op6'])){
     
 }
