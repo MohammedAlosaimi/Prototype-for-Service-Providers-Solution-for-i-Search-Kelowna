@@ -1,0 +1,8 @@
+Topics For Next Client Meeting
+- grading, she wants to talk about.
+- maybe again with trying to figure out more query designs
+- proposing mock data
+- showing here current product
+- talk about our generic queries that we have gotten so far. Are they on the right path.
+- defining what is good to have on the side by side comparison 
+- 
