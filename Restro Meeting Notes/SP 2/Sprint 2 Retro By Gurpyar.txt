@@ -1,0 +1,10 @@
+Gurpyar Singh - COSC224, i-Search Kelowna
+Date - 26th February, 2018
+Sprint started on 19th February 2018
+Sprint ending on 27th February 2018
+Works Accomplished:
+Completed editing HTML and CSS so that we could use it properly
+in future.
+Problem: I wanted to work on PHP as well but couldn't because I 
+got sick.
+I will try to stay healthy and spend more time on the project.
