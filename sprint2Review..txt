@@ -1,0 +1,4 @@
+Sprint 2
+1) Went well : Got queries going.
+2) Not good: No formatting done.
+3) What I did: Mostly PHP queries.
