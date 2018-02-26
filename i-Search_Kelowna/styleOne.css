@@ -42,50 +42,42 @@ aside{
     width: 80%;
     height: 20%;
     float: left;
-    columns: 100px 3;
-    
+    columns: 30px 3;
 }
-
-
-
-
-
-
-
-
-
 
 #showMore{
     display: none;
 }
+
 #showBtn{
     float:left;
     margin-left: 8.5%;
     margin-top: 1em;
 }
+
 form{
     margin-left: 8.5%;
     text-align: left;
 }
+
 main{
+    width: 80%;
+    height: 40%;
     border-top: solid;
-    border-color: lightgrey;
-    border-width: 2px;
-    padding: 1em;
-    background-color: whitesmoke;
-    float: left;
-    margin-top: 1em;
-    width: 70%;
-    margin-left: 15%;
+    border-color: lightgray;
+    border-width: 1px;
+    background-color: yellow;
+    margin-left: 20%;
+    margin-top: 4.5%;
 }
 .num{
     width: 50px;
 }
-
 input{   
     padding: .25em;
     margin-bottom: .5em;
 }
+
 input[type=submit]{
     background-color: rgb(143, 21, 64);
     border-style: none;
