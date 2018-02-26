@@ -1,0 +1,12 @@
+Jesse John
+What did we do?
+We designed two queries and implemented one of them. So now we have a site with one working query I believe.
+
+What went wrong?
+I think we rushed and ended up putting too much undefined content in this weeks sprint. We also made the mistake of trying to assign one task to two people in jira, which I guess is just not how things are done. We also should've put more thought into breaking down each task into more atomic parts. 
+
+what went well?
+I did like that we worked together at school pretty much everyday. I like not having to think about it when I get home. We had some good arguments about content and I think that is healthy for getting quality results.
+
+What could be improved?
+Break down tasks into more individual parts for people to work on. I don't think we should rush to get features for a client meeting. We should work productively and consistently and show her what we got when we meet her.
