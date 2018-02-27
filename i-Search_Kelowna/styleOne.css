@@ -42,7 +42,7 @@ aside{
     width: 80%;
     height: 20%;
     float: left;
-    columns: 30px 3;
+    columns: 32px 3;
 }
 
 #showMore{
@@ -53,6 +53,7 @@ aside{
     float:left;
     margin-left: 8.5%;
     margin-top: 1em;
+    
 }
 
 form{
@@ -66,9 +67,9 @@ main{
     border-top: solid;
     border-color: lightgray;
     border-width: 1px;
-    background-color: yellow;
+   /*background-color: yellow;*/
     margin-left: 20%;
-    margin-top: 4.5%;
+    margin-top: 6%;
 }
 .num{
     width: 50px;
