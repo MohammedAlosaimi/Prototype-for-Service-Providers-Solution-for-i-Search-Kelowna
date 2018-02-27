@@ -1,0 +1,50 @@
+marking criteria
+
+fulfilling requirements on time
+fulfilling requirements
+communication
+
+We need to come up with a development plan 
+
+5% for communication
+5% for completing on time. One day delay is 1% docked 
+
+
+
+
+
+notes:
+Either intuitive. And any part that isn't we have good accessible intstructions for
+
+
+email her:
+Time frame.
+Schedule a meeting before the final hand in.
+	
+A email of our idea of how the %40 is split up. So that she can confirm.
+
+
+her recommendations our site
+contact information is good but the email and name isn't always as much.
+There is a field called referral which is more vital and accurate. because some organizations are run by other orgs. So the referral is to the owner org.
+
+Stuff in db but not website:
+rgi
+we should also look for ourselves which ones aren't accessible on the website
+
+
+IDEA for hers
+Using the address to see which area of town that is in. and have it in the search criteria (Search by the area)
+
+A big goal of ours is even to basically present the data in the current map site in a better format. both an exportable format and more bulk mindset ind of results
+
+There is a relationship between organizations of which organizations own/controil other organizations 
+
+exportability is really big.
+
+
+look through db find bad data columns. make a list. and think about what rich reports we could design if we had good data. email her a list of those columns and explanations of rich reports. Then she will confirm whether or not we should do mock data.
+
+
+
+
