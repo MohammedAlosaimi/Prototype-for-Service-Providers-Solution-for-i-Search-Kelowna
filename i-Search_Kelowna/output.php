@@ -19,7 +19,7 @@ if (isset($_POST['op1'])){
     $size = sizeof($rArray);
     for ($i = 0; $i < $size; $i++){       
         echo $rArray[$i], "<br>";
-        echo "_______________________________ <br>";
+        echo "_______________________________ <br>"; //<- TEMP
     }
 }
 if (isset($_POST['op2'])){
@@ -46,13 +46,10 @@ if (isset($_POST['op2'])){
               Number_of_Duplex_Units +
               Number_of_Fourplex_Units +
               Number_of_Townhouse_Units)";                
-        $result3 = mysqli_query($mysqli, $sqlOp2) or die(mysqli_error($mysqli));
-        $rArray3 = array();
-        while ($info = mysqli_fetch_array($result3)){
+        $result2 = mysqli_query($mysqli, $sqlOp2) or die(mysqli_error($mysqli));
+        $rArray2 = array();
+        while ($info = mysqli_fetch_array($result2)){
             $in1 = stripslashes($info["title"]);
-            if($in1 == NULL){
-                $in1 = "n/a";
-            }
             $in2 = stripslashes($info["contact_person"]);
             if($in2 == NULL){
                 $in2 = "n/a";
@@ -66,16 +63,54 @@ if (isset($_POST['op2'])){
                 $in4 = "n/a";
             }
             $temp = $in1 . "<br>" . "Contact Person: " . $in2 . "<br>". "Phone Number: " . $in3 . "<br>" . "email: " . $in4;
-            //make multi d array array?
-            array_push($rArray3, $temp);
+            array_push($rArray2, $temp);
         }
-        $size = sizeof($rArray3);
+        $size = sizeof($rArray2);
         for ($i = 0; $i < $size; $i++){
-            echo $rArray3[$i], "<br>";
-            echo "_______________________________ <br>";
+            echo $rArray2[$i], "<br>";
+            echo "_______________________________ <br>"; //<- TEMP
         }
 }
 if (isset($_POST['op3'])){
+    $sqlOp3 = "SELECT DISTINCT title, Accommodations_For_Smoking, Residents_are_required_to_abstain_from_alcohol_and_drugs, Level_of_Drugs_and_Alcohol_Tolerence  
+               FROM isearch";
+   $result3 = mysqli_query($mysqli, $sqlOp3) or die(mysqli_error($mysqli));
+   $rArray3 = array();
+    while ($info = mysqli_fetch_array($result3)){  
+        $temp = "";
+        $in1 = stripslashes($info["title"]);
+        $in2 = stripslashes($info["Accommodations_For_Smoking"]);
+        $in3 = stripslashes($info["Residents_are_required_to_abstain_from_alcohol_and_drugs"]);
+        $in4 = stripslashes($info["Level_of_Drugs_and_Alcohol_Tolerence"]);
+        if($in2 == NULL){
+            $in2 = "-----> No smoking accomodations.";
+        }
+        else{
+            $in2 = "----->" . $in2;
+        }
+        if($in3 == "true"){
+            $in3 = "-----> Yes.";}            
+        else if($in3 == "false"){
+            $in3 = "-----> No.";            
+        }
+        else{
+            $in3 = "n/a";
+        }
+        if($in4 == NULL){
+            $in4 = "n/a";
+        }
+        $in1 = "Organization: " . $in1 . "<br>";
+        $in2 = "Are there accomodations for smoking? " . $in2 . "<br>";
+        $in3 = "Are residents required to abstain from alcohol and drugs? " . $in3 . "<br";
+        $in4 = "Level of drug and alcohol tolerence: ". $in4 . "<br>";
+        $temp = $in1 . $in2 . $in3 . $in4;
+        array_push($rArray3, $temp);
+    }
+    $size = sizeof($rArray3);
+    for ($i = 0; $i < $size; $i++){       
+        echo $rArray3[$i], "<br>";
+        echo "_______________________________ <br>"; //<- TEMP
+    }
     
 }
 if (isset($_POST['op4'])){
