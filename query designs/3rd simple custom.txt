@@ -1,0 +1,9 @@
+18:57 PM Monday, February 26, 2018-02-26
+This query isn't too complicated.
+It is basically the idea of another custom query. It will allow the user to select all rows and a custom selection of columns. 
+
+SELECT ( ... )
+FROM DB
+ORDER BY whatever;
+
+And the idea is that there would b a list of all columns with checkboxes. The user checks the boxes that they want to see, and then you take the select check boxes and make the select statement with the columns they checked.
