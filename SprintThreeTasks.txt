@@ -1,0 +1,22 @@
+1) eric: get dynamic webpage working
+         nice formating
+
+2) Get site to live server
+
+3) More sql queries
+
+4) implementing new queries.
+
+5) Clean up css / html.
+
+6) Print / export / email.
+
+7) mock data: review DB, email carrie.
+
+8) make site more accessible.
+
+9) address to define general area. 
+
+10) Find parent organizations
+
+11) Referal agency
