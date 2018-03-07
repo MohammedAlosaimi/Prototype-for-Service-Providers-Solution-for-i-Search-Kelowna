@@ -11,7 +11,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     </head>
     <body>
-        
+
         <header>
             <h1><a href="https://isearchkelowna.ca/"><img src = "iSearchKelowna Logo.PNG" alt = "logo"></a></h1>
         </header>       
@@ -27,66 +27,66 @@
             </div>           
         </aside>
         <div id ="showMore">
-                    <label for="genderServed">Gender(s) Served:</label>
-                    <select id = "genderServed">
-                        <option>No preference</option>
-                        <option>Male only</option>
-                        <option>Female only</option>
-                        <option>Transgender only</option>
-                        <option>All genders accommodated</option>                    
-                    </select><br>
-                    Is alcohol permitted?                
-                        <input type = "radio" name = "alcUse" value = "Yes" id = "atrue">Yes
-                        <input type = "radio" name = "alcUse" value = "No" id = "afalse">No<br>
-                    Are drugs permitted?
-                        <input type = "radio" name = "drugUse" value = "Yes" id = "dUtrue">Yes
-                        <input type = "radio" name = "drugUse" value = "No" id = "dUfalse">No<br>
-                    Are the disabled accommodated?
-                        <input type = "radio" name = "accDisabled" value = "Yes" id = "aDtrue">Yes
-                        <input type = "radio" name = "accDisabled" value = "No" id = "aDfalse">No<br>
-                    Are pets permitted?
-                        <input type = "radio" name = "pets" value = "Yes" id = "ptrue">Yes
-                        <input type = "radio" name = "pets" value = "No" id = "pfalse">No<br>
-                    Services Provided:
-                        Meals <input type = "checkbox">
-                        Showers <input type = "checkbox">
-                        Storage <input type = "checkbox">
-                        Clothing <input type = "checkbox"><br>
-                        Household goods <input type = "checkbox">
-                        Case management <input type = "checkbox">
-                        Referrals to other agencies <input type = "checkbox">                        
-                </div>
-            <div id = "options">
-                <h4> Refine Search </h4>
-                <label for="Keywords">Keywords:</label>
-                    <input type = "text" id = "Keywords"><br>
-                <label for="minAge"> Age Demographic:</label>
-                    <input type = "number" id = "minAge" class = "num" placeholder="Min"> to 
-                    <input type = "number" id = "maxAge" class = "num" placeholder="Max"><br>
-                <label for="rent">Desired Monthly Rent:</label>
-                    <input type = "number" id = "rent" placeholder = "$" class = "num"><br>                
-                <label for="buildingType">Building Type:</label>
-                    <select id = "buildingType">
-                        <option>No preference</option>
-                        <option>Emergency </option>
-                        <option>Supportive</option>
-                        <option>Transitional</option>
-                        <option>Low income rental</option>
-                    </select><br>
-                
-                <button class ='smallBtn' onclick="showMore()">Show more options</button><br><br>
-                <button class ='btn' onClick ="output('7')">Refine/Search</button>
-            </div>                   
+            <label for="genderServed">Gender(s) Served:</label>
+            <select id = "genderServed">
+                <option>No preference</option>
+                <option>Male only</option>
+                <option>Female only</option>
+                <option>Transgender only</option>
+                <option>All genders accommodated</option>                    
+            </select><br>
+            Is alcohol permitted?                
+            <input type = "radio" name = "alcUse" value = "Yes" id = "atrue">Yes
+            <input type = "radio" name = "alcUse" value = "No" id = "afalse">No<br>
+            Are drugs permitted?
+            <input type = "radio" name = "drugUse" value = "Yes" id = "dUtrue">Yes
+            <input type = "radio" name = "drugUse" value = "No" id = "dUfalse">No<br>
+            Are the disabled accommodated?
+            <input type = "radio" name = "accDisabled" value = "Yes" id = "aDtrue">Yes
+            <input type = "radio" name = "accDisabled" value = "No" id = "aDfalse">No<br>
+            Are pets permitted?
+            <input type = "radio" name = "pets" value = "Yes" id = "ptrue">Yes
+            <input type = "radio" name = "pets" value = "No" id = "pfalse">No<br>
+            Services Provided:
+            Meals <input type = "checkbox">
+            Showers <input type = "checkbox">
+            Storage <input type = "checkbox">
+            Clothing <input type = "checkbox"><br>
+            Household goods <input type = "checkbox">
+            Case management <input type = "checkbox">
+            Referrals to other agencies <input type = "checkbox">                        
+        </div>
+        <div id = "options">
+            <h4> Refine Search </h4>
+            <label for="Keywords">Keywords:</label>
+            <input type = "text" id = "Keywords"><br>
+            <label for="minAge"> Age Demographic:</label>
+            <input type = "number" id = "minAge" class = "num" placeholder="Min"> to 
+            <input type = "number" id = "maxAge" class = "num" placeholder="Max"><br>
+            <label for="rent">Desired Monthly Rent:</label>
+            <input type = "number" id = "rent" placeholder = "$" class = "num"><br>                
+            <label for="buildingType">Building Type:</label>
+            <select id = "buildingType">
+                <option>No preference</option>
+                <option>Emergency </option>
+                <option>Supportive</option>
+                <option>Transitional</option>
+                <option>Low income rental</option>
+            </select><br>
+
+            <button class ='smallBtn' onclick="showMore()">Show more options</button><br><br>
+            <button class ='btn' onClick ="output('7')">Refine/Search</button>
+        </div>                   
         <main>
             <div id='out'>
-                
+                <img src="img.jpg" alt="rough">
             </div>
         </main>
-        
+        <button class ='printbtn' onClick ="print()">Print</button>
         <footer>
             © iSearch - Kelowna
         </footer>
-        
+
         <script>
             function showMore() {
                 var x = document.getElementById("showMore");
@@ -98,10 +98,21 @@
                 }
             }
         </script>       
+
         <script type="text/javascript">
             function output(id) {
                 $('#out').load('output.php?id=' + id);
             }
         </script>
+
+        <script>
+            function print() {
+                window.print();
+            }
+        </script>
+
+
+
+
     </body>    
 </html>
