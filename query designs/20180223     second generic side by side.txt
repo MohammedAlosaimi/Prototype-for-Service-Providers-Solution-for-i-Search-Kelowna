@@ -1,0 +1,36 @@
+10:40 AM Friday, February 23, 2018-02-23
+This is the basic design for a query for the results of both sides of the side by side comparison. 
+
+
+SELECT title, email, length(services_provided) + length(other_services), item_views, rent_cost 
+FROM isearch.istable
+WHERE ( ... )
+ORDER BY ( ... )
+
+Okay so the idea is that you will have two containers side by side. One for each of the two SPs (service providers) that were checked (checkbox) by the user from the previous query. 
+The two queries would be the same in total except for the WHERE clause which would be simply, WHERE id = "id of checked SP". 
+This would result in one row with multiple columns in each side of the comparison. That is not a very useful format so you can take the value of each column and make a vertical list. 
+	Example output of the query:
+		title		email		length		item_views		rent_cost
+		---------------------------------------------------------------------------------
+		Salv army	sa.gmail.com	10		200			300
+	
+	Turning that into a list:
+		title:
+			salvation army
+			
+		email:
+			as.gmail.com
+		
+		length:
+			10
+			
+		item_views
+			200
+			
+		rent_cost
+			300
+			
+That was what I was thinking but do whatever you want.
+
+I have dont at all know how to implement this side-by-side concept in php, so feel free to save this for after we have researched more and figured out if we need to use AJAX or something else.
