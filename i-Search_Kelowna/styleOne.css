@@ -4,14 +4,12 @@ header{
     width: 100%; 
     padding-top:0.2em;
 }
-
 header h1{
     margin-left: 2%;
     border-bottom: solid;
     border-color: lightgrey;
     border-width: 1px;
 }
-
 body{ 
     height: 100%; 
     width: 100%;
@@ -37,39 +35,37 @@ aside{
     border-right: 0.1em solid white; 
     */
 }
-#formDiv{       
-    text-align: center;
-    width: 80%;
-    height: 20%;
-    float: left;
-    columns: 32px 3;
+#options{
+    margin-left: 20em;
 }
+#formDiv{
 
+}
 #showMore{
     display: none;
+    float: right;
+    margin-right: 15%;
+    margin-top: 4%;
 }
-
 #showBtn{
     float:left;
-    margin-left: 8.5%;
-    margin-top: 1em;
-    
+    margin-top: 1em;    
 }
-
-form{
+#broadSearch{
     margin-left: 8.5%;
     text-align: left;
 }
-
+#out{
+    margin: 2em;
+}
 main{
     width: 80%;
     height: 40%;
     border-top: solid;
     border-color: lightgray;
     border-width: 1px;
-   /*background-color: yellow;*/
     margin-left: 20%;
-    margin-top: 6%;
+    margin-top: 5px;
 }
 .num{
     width: 50px;
@@ -78,17 +74,28 @@ input{
     padding: .25em;
     margin-bottom: .5em;
 }
-
-input[type=submit]{
+.btn{
     background-color: rgb(143, 21, 64);
     border-style: none;
     color: white;    
     width: 15em;  
     height: 3em;
     cursor: pointer;
+    margin: .25em;
+}
+.smallBtn{
+    margin-left: .25em;
+    margin-top: .25em;
+    background-color: rgb(143, 21, 64);
+    border-style: none;
+    color: white;    
+    cursor: pointer;
+    width: 10em;  
+    height: 2em;
 }
 footer{
     font-size: 12px;
     clear: both;
     float: none;
 }
+
