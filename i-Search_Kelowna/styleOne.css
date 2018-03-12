@@ -50,13 +50,10 @@ aside{
 #showMore{
     display: none;
     float: right;
-<<<<<<< HEAD
     margin-right: 15%;
     margin-top: 4.25%;
-=======
     margin-right: 8%;
     margin-top: 4%;
->>>>>>> f749437d46390b019c87e6993a6a71fc1d65dec7
 }
 #showBtn{
     float:left;
@@ -71,7 +68,7 @@ aside{
 }
 main{
     width: 80%;
-    height: 40%;
+    min-height: 40%;
     border-top: solid;
     border-color: lightgray;
     border-width: 1px;
@@ -107,7 +104,7 @@ input{
     margin-right: 3%;
  
 }
-main a{
+main .a{
     background-color: rgb(143, 21, 64);
     text-align: center;
     color: white;    
