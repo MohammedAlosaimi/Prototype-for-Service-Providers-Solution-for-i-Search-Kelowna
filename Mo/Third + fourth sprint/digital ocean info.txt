@@ -1,0 +1,5 @@
+Your new Droplet is all set to go! You can access it using the following credentials:
+
+Droplet Name: ubuntu-test-server
+IP Address: 138.197.166.10
+Username: root
