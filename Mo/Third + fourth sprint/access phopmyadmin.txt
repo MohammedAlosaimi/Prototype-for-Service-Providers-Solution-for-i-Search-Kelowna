@@ -1,0 +1,6 @@
+To access phpmyadmin:
+
+http://138.197.166.10/phpmyadmin
+
+username: root
+password: the password for everything is the same as my personal password

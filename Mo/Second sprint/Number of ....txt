@@ -1,0 +1,20 @@
+Number of Dormitory Beds
+Number of Shared Bedroom Beds
+Number of Single Bedroom Beds
+Number of Studio/Bachelor Units
+Number of 1 Bedroom Units
+Number of 2 Bedroom Units
+Number of 3 Bedroom Units
+Number of 4 Bedroom Units
+Number of Other Type Bedroom Units
+Number Beds in house with shared bedroom(s)
+Number of Beds in House with Individual Rooms
+Number of Apartment Studio Units
+Number of 1 Bedroom Apartment Units
+Number of 2 and 3 Bedroom Apartment Units
+Number of Other Units
+Number of Beds in Shared Accommodation House
+Number of Units in Secondary House Suite
+Number of Duplex Units
+Number of Fourplex Units
+Number of Townhouse Units
