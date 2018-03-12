@@ -1,0 +1,65 @@
+SELECT title, ifnull(description, "NONE") description, ifnull(Building_Type, "NONE") Building_type,  ifnull(Contact_Person, "NONE") Contact_Person,
+       ifnull(Position_of_Contact, "NONE") Position_of_Contact, ifnull(Phone_Number, "NONE") Phone_Number, ifnull(Email, "NONE") Email
+from istable
+WHERE Has_Waitlist = "TRUE"
+ORDER BY title
+
+----------------------------------------------------------------------------
+
+SELECT title, ifnull(description, "NONE") description, ifnull(Building_Type, "NONE") Building_type,  ifnull(Contact_Person, "NONE") Contact_Person,
+       ifnull(Position_of_Contact, "NONE") Position_of_Contact, ifnull(Phone_Number, "NONE") Phone_Number, ifnull(Email, "NONE") Email
+from istable
+WHERE Has_Waitlist = "FALSE"
+ORDER BY title
+
+----------------------------------------------------------------------------
+
+SELECT title, ifnull(description, "NONE") description, ifnull(Building_Type, "NONE") Building_type,  ifnull(Contact_Person, "NONE") Contact_Person,
+       ifnull(Position_of_Contact, "NONE") Position_of_Contact, ifnull(Phone_Number, "NONE") Phone_Number, ifnull(Email, "NONE") Email
+from istable
+WHERE Has_Maximum_Duration_of_Stay = "TRUE"
+ORDER BY title
+
+----------------------------------------------------------------------------
+
+SELECT title, ifnull(description, "NONE") description, ifnull(Building_Type, "NONE") Building_type,  ifnull(Contact_Person, "NONE") Contact_Person,
+       ifnull(Position_of_Contact, "NONE") Position_of_Contact, ifnull(Phone_Number, "NONE") Phone_Number, ifnull(Email, "NONE") Email
+from istable
+WHERE Has_Maximum_Duration_of_Stay = "FALSE"
+ORDER BY title
+
+----------------------------------------------------------------------------
+
+SELECT title, ifnull(description, "NONE") description, ifnull(Building_Type, "NONE") Building_type,  ifnull(Contact_Person, "NONE") Contact_Person,
+       ifnull(Position_of_Contact, "NONE") Position_of_Contact, ifnull(Phone_Number, "NONE") Phone_Number, ifnull(Email, "NONE") Email
+from istable
+WHERE Housing_is_fully_self_contained_BathroomKitchen = "TRUE"
+ORDER BY title
+
+----------------------------------------------------------------------------
+
+SELECT title, ifnull(description, "NONE") description, ifnull(Building_Type, "NONE") Building_type,  ifnull(Contact_Person, "NONE") Contact_Person,
+       ifnull(Position_of_Contact, "NONE") Position_of_Contact, ifnull(Phone_Number, "NONE") Phone_Number, ifnull(Email, "NONE") Email
+from istable
+WHERE Housing_is_fully_self_contained_BathroomKitchen = "FALSE"
+ORDER BY title
+
+----------------------------------------------------------------------------
+
+SELECT title, ifnull(description, "NONE") description, ifnull(Building_Type, "NONE") Building_type,  ifnull(Contact_Person, "NONE") Contact_Person,
+       ifnull(Position_of_Contact, "NONE") Position_of_Contact, ifnull(Phone_Number, "NONE") Phone_Number, ifnull(Email, "NONE") Email
+from istable
+WHERE Housing_is_fully_furnished = "TRUE"
+ORDER BY title
+
+----------------------------------------------------------------------------
+
+SELECT title, ifnull(description, "NONE") description, ifnull(Building_Type, "NONE") Building_type,  ifnull(Contact_Person, "NONE") Contact_Person,
+       ifnull(Position_of_Contact, "NONE") Position_of_Contact, ifnull(Phone_Number, "NONE") Phone_Number, ifnull(Email, "NONE") Email
+from istable
+WHERE Housing_is_fully_furnished = "FALSE"
+ORDER BY title
+
+----------------------------------------------------------------------------
+
+
