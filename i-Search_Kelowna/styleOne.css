@@ -50,11 +50,11 @@ aside{
 #showMore{
     display: none;
     float: right;
-    margin-right: 15%;
-    margin-top: 4.25%;
-    margin-right: 8%;
+    margin-right: 4%;
     margin-top: 4%;
+    overflow: hidden;
 }
+
 #showBtn{
     float:left;
     margin-top: 2em;    
@@ -102,7 +102,7 @@ input{
     margin: .25em;
     float: right;
     margin-right: 3%;
- 
+
 }
 main .a{
     background-color: rgb(143, 21, 64);
@@ -116,16 +116,6 @@ main .a{
     float: right;
     margin-right: 3%;
 }
-.smallBtn{
-    margin-left: .25em;
-    margin-top: 1em;
-    background-color: rgb(143, 21, 64);
-    border-style: none;
-    color: white;    
-    cursor: pointer;
-    width: 12em;  
-    height: 2em;
-}
 footer{
     font-size: 12px;
     clear: both;
@@ -135,6 +125,36 @@ main img{
     width: 100%;
     height:100%;
 }
+
+/*CSS for queries*/
+.q1{
+    background-color: rgb(143, 21, 64);
+    color: white;
+    width:100%;
+    padding: 1em;
+    margin-top:0;
+    margin-bottom: 0.1em;
+}
+.q2{
+    background-color: rgb(143, 21, 64);
+    color: white;
+    width:100%;
+    padding: 1em;
+    margin-top:0;
+    margin-bottom: 0.1em;
+}
+#firsta{
+    cursor: pointer;
+}
+#qs{
+    height: 10%;
+    width:100%;
+    background-color:white;
+    text-align: justify;
+    overflow: hidden; 
+    padding-top: 2em;
+}
+
 /*
 .fa {
   padding: 20px;

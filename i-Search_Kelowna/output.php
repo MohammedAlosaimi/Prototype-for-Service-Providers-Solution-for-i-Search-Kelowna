@@ -37,12 +37,12 @@ if ($id == 1){
         if($in2 == NULL){
             $in2 = "";
         }
-        $temp = "<li>" . "<b>" . $in1 . "</b>" . " | ". "<a onclick = 'contactInfo.js' href = 'javascript:void(0);' >Contact Info</a>" . "</li>";
+        $temp = "<li  class='q1'>" . "<b>" . $in1 . "</b>" . " | ". "<a onclick = 'contactInfo.js' href = 'javascript:void(0);' >Contact Info</a>" . "</li>";
         array_push($rArray, $temp);
     }
     $size = sizeof($rArray);
     for ($i = 0; $i < $size; $i++){       
-        echo $rArray[$i], "<br>", "<br>";
+        echo $rArray[$i];
     }
 }
 if ($id == 2){
@@ -74,10 +74,18 @@ if ($id == 3){
         if($in4 == NULL){
             $in4 = "n/a";
         }
-        $in2 = "Q) Are there accomodations for smoking? " . $in2 . "<br>";
+        $in2 = "<div id='qs'>"."Q) Are there accomodations for smoking? " . $in2 . "<br>";
         $in3 = "Q) Are residents required to abstain from alcohol and drugs? " . $in3 . "<br";
-        $in4 = "Q) Level of drug and alcohol tolerence: ". $in4 . "<br>";
-        $temp = "<li>" . "<b>" . $in1 . "</b>" . " | ". "<a onclick = 'contactInfo.js' href = 'javascript:void(0);' >Contact Info</a>" . "</li>" . $in2 . $in3 . $in4 . "<br>";
+        $in4 = "Q) Level of drug and alcohol tolerence: ". $in4 . "<br></div>";
+       
+        
+        //This is to be changed.
+        
+        $temp = "<li class='q2'><b><a id ='firsta'>" . $in1 . "</a></b>" . " | ". "<a id='seconda' onclick = 'contactInfo.js' href = 'javascript:void(0);' >Contact Info</a>" . "</li>" . $in2 . $in3 . $in4 . "<br>";
+        
+        
+        
+        
         array_push($rArray3, $temp);
     }
     $size = sizeof($rArray3);
