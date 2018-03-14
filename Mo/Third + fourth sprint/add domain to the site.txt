@@ -1,0 +1,2 @@
+What we need to do to get the domain pointing to digital ocean server:
+- configure domain to use digital ocean name's server
