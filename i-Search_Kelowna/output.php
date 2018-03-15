@@ -45,6 +45,7 @@ $id = $_GET['id'];
         $in8 = stripslashes($info["Monthly_Cost_Calculation"]);
             $allArray[$outer][$inner + 7] = $in8;
         $in9 = stripslashes($info["Building_is_Pet_Friendly"]);
+<<<<<<< HEAD
             $allArray[$outer][$inner + 8] = $in9;
         $in10 = stripslashes($info["Accommodations_For_Smoking"]);
             $allArray[$outer][$inner + 9] = $in10;
@@ -73,6 +74,28 @@ if ($id == 1){
         echo $allArray[$i][0] . "<br>"; 
         echo "<br>";
     } 
+=======
+    }
+if ($id == 1){  
+   $sql = "SELECT DISTINCT title, description, id
+           FROM isearch";
+   $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
+   $rArray = array();
+    while ($info = mysqli_fetch_array($result)){  
+        $temp = "";
+        $in1 = stripslashes($info["title"]);
+        $in2 = stripslashes($info["description"]);
+        if($in2 == NULL){
+            $in2 = "";
+        }
+        $temp = "<li  class='q1'>" . "<b>" . $in1 . "</b>" . " | ". "<a onclick = 'contactInfo.js' href = 'javascript:void(0);' >Contact Info</a>" . "</li>";
+        array_push($rArray, $temp);
+    }
+    $size = sizeof($rArray);
+    for ($i = 0; $i < $size; $i++){       
+        echo $rArray[$i];
+    }
+>>>>>>> e7a283937347fd5be963e97fa89f4457e0929451
 }
 if ($id == 2){
     for($i = 0; $i < $numOfRows; $i ++){
@@ -83,11 +106,52 @@ if ($id == 2){
     }
 }
 if ($id == 3){
+<<<<<<< HEAD
     for($i = 0; $i < $numOfRows; $i ++){
         echo $allArray[$i][0] . "<br>";
         echo $allArray[$i][9] . "<br>";
         echo $allArray[$i][10] . "<br>";  
         echo "<br>";
+=======
+    $sqlOp3 = "SELECT DISTINCT title, Accommodations_For_Smoking, Residents_are_required_to_abstain_from_alcohol_and_drugs, Level_of_Drugs_and_Alcohol_Tolerence  
+               FROM isearch";
+   $result3 = mysqli_query($mysqli, $sqlOp3) or die(mysqli_error($mysqli));
+   $rArray3 = array();
+    while ($info = mysqli_fetch_array($result3)){  
+        $temp = "";
+        $in1 = stripslashes($info["title"]);
+        $in2 = stripslashes($info["Accommodations_For_Smoking"]);
+        $in3 = stripslashes($info["Residents_are_required_to_abstain_from_alcohol_and_drugs"]);
+        $in4 = stripslashes($info["Level_of_Drugs_and_Alcohol_Tolerence"]);
+        if($in2 == NULL){
+           $in2 = "A) No smoking accomodations.";
+        }
+        else{
+           $in2 = "A) " . $in2;  
+        }
+        if($in3 == "true"){
+            $in3 = "A) Yes.";}            
+        else if($in3 == "false"){
+            $in3 = "A) No.";}
+        else{
+            $in3 = "n/a";}
+        if($in4 == NULL){
+            $in4 = "n/a";
+        }
+        $in2 = "<div id='qs'>"."Q) Are there accomodations for smoking? " . $in2 . "<br>";
+        $in3 = "Q) Are residents required to abstain from alcohol and drugs? " . $in3 . "<br";
+        $in4 = "Q) Level of drug and alcohol tolerence: ". $in4 . "<br></div>";
+       
+        
+        //This is to be changed.
+        
+        $temp = "<li class='q2'><b><a id ='firsta'>" . $in1 . "</a></b>" . " | ". "<a id='seconda' onclick = 'contactInfo.js' href = 'javascript:void(0);' >Contact Info</a>" . "</li>" . $in2 . $in3 . $in4 . "<br>";
+        
+        
+        
+        
+        array_push($rArray3, $temp);
+>>>>>>> e7a283937347fd5be963e97fa89f4457e0929451
     }
 }
 if ($id == 4){
