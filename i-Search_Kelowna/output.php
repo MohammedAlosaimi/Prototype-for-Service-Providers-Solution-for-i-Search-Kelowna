@@ -6,7 +6,6 @@
  //echo $data;
  
 $id = $_GET['id'];
-echo $id;
    $keywords;
    $ageDemo;
    $rent;
