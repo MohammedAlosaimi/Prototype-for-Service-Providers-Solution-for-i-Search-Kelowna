@@ -6,20 +6,17 @@ Building_Accommodated_Individuals_with_Disabilities, Monthly_Cost_Calculation, B
 Accommodations_For_Smoking, Residents_are_required_to_abstain_from_alcohol_and_drugs,
 Level_of_Drugs_and_Alcohol_Tolerence, Demographic_Served,Search_Keywords, id, Gender_Served, 
 Primary_Target_Resident, Other_Services*/
-//$data_to_be_pass=$_POST['dataString'];
 
-//$res="Data Passed Successfully: ".$data_to_be_pass;
-//echo json_encode($res);
+$id = $_POST['id'];
+$keywords = $_POST['keywords'];
+$age = $_POST['age'];
+$rent = $_POST['rent'];
+$buildingType = $_POST['buildingType'];
+$gender = $_POST['genderServed'];
+$alcohol = $_POST['alcohol'];
+$disAcc = $_POST['disabledAcc'];
+$pets = $_POST['pets'];
 
-$id = $_GET['id'];    
-$keywords;
-$ageDemo;
-$rent;
-$buildingType;
-$gender;
-$alcohol;
-$disAcc;
-$pets;
 $mysqli = mysqli_connect("localhost", "root", "", "isearch");
    
 if ($id == 1){ 
