@@ -6,10 +6,9 @@ Building_Accommodated_Individuals_with_Disabilities, Monthly_Cost_Calculation, B
 Accommodations_For_Smoking, Residents_are_required_to_abstain_from_alcohol_and_drugs,
 Level_of_Drugs_and_Alcohol_Tolerence, Demographic_Served,Search_Keywords, id, Gender_Served, 
 Primary_Target_Resident, Other_Services*/
-echo "here";
-$test = $_POST['test'];
 
-//$id = $_GET['id'];    
+$id = $_POST['id'];
+$data = $_POST['data'];
 $keywords;
 $ageDemo;
 $rent;
