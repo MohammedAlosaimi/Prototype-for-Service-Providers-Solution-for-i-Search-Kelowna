@@ -100,7 +100,6 @@
 
         <script type="text/javascript">
             function output(id) {
-<<<<<<< HEAD
                //Default values for radio buttons.
                alcohol = '';
                drugs = '';
@@ -138,16 +137,6 @@
                genderServed = document.getElementById("genderServed").value;
                $('#out').load("output.php", {id, keywords, age, rent, buildingType, genderServed, alcohol, drugs, disabledAcc, pets});
             }
-=======
-                data = 0;
-                $("#out").load("output.php", {id, data});
-            }
-            function update(){
-               id = 7;
-               data = document.getElementById("Keywords").value;
-               $('#out').load("output.php", {data, id}); 
-            }
->>>>>>> 7af0b59ad9388c891045e5aeb1c578ce3c152892
            /*function update(){
                 var dataString = "eric";
                 $.ajax({

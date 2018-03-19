@@ -8,7 +8,6 @@ Level_of_Drugs_and_Alcohol_Tolerence, Demographic_Served,Search_Keywords, id, Ge
 Primary_Target_Resident, Other_Services*/
 
 $id = $_POST['id'];
-<<<<<<< HEAD
 $keywords = $_POST['keywords'];
 $age = $_POST['age'];
 $rent = $_POST['rent'];
@@ -18,17 +17,6 @@ $alcohol = $_POST['alcohol'];
 $disAcc = $_POST['disabledAcc'];
 $pets = $_POST['pets'];
 
-=======
-$data = $_POST['data'];
-$keywords;
-$ageDemo;
-$rent;
-$buildingType;
-$gender;
-$alcohol;
-$disAcc;
-$pets;
->>>>>>> 7af0b59ad9388c891045e5aeb1c578ce3c152892
 $mysqli = mysqli_connect("localhost", "root", "", "isearch");
    
 if ($id == 1){ 
