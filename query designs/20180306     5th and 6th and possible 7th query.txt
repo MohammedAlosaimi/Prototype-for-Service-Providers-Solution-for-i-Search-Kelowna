@@ -4,10 +4,12 @@ Possible things to go off of:
 5.) To display the current data on the website in one place nicely
 	I think this could be a kind of sub query. A query for a pop up window when you click on the name of an organization
 6.) idk maybe a query to select organizations for either:
-	woman
-	men
+	individuals
+	couples
 	families
-	youth
+	female 
+	male
+	transgender
 	
 4.)
 	So as far as I can see there is no address field. We have coordinates though, and its not too difficult of math to see if a given point is inside a given rectangle. So we could map out a rectangle, or polygon, for each area, take the points of those triangles, then write a mysql function to pass a point into it and return the area. I'm not quite sure how to do this though, but I think its possible. 
