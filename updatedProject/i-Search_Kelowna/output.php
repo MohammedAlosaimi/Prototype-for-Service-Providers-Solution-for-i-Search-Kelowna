@@ -24,7 +24,7 @@ $female = $_POST['female'];
 $transgender = $_POST['transgender'];
 $age = $_POST['age'];
 
-$mysqli = mysqli_connect("localhost", "root", "Mohammed4848", "isearch");
+$mysqli = mysqli_connect("localhost", "root", "", "isearch");
 
 if ($id == 1) {
     //title, description
